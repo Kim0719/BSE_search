@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -38,10 +33,10 @@ cursor = conn.cursor()
 # In[3]:
 
 
-server = '10.2.11.32' 
-database = 'DB_SMS'
-username = 'guid' 
-password = 'gpwd' 
+server = '' 
+database = ''
+username = '' 
+password = '' 
 conn_sp = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                           'Server=' + server + ';'
                           'Database=' + database + ';'
@@ -56,16 +51,16 @@ cursor_sp = conn_sp.cursor()
 
 cursor.execute("{CALL [dbo].[GetOpdList]}")
 
-# 获取存储过程的结果集
+#獲取結果
 rows = cursor.fetchall()
 
-# 提取结果中的 chMRNo
+#存為集合
 IDs = [row.chMRNo for row in rows]
 
-# 关闭数据库连接
+
 #conn_sp.close()
 
-# 使用 IDs 进行后续操作
+
 #print(IDs)
 
 
