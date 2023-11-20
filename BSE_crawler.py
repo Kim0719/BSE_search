@@ -86,8 +86,8 @@ search_input = WebDriverWait(driver, 20).until(
     "找不到指定的元素"
 )
 print("----------網頁成功開啟----------")
-Hospital_ID="1140030012"
-PassWord="413034"
+Hospital_ID=""
+PassWord=""
 print("--------開始輸入基本資料--------")
 driver.find_element('id','mat-input-0').send_keys(Hospital_ID)#輸入醫事機構代碼
 print("===>醫事機構代碼:",Hospital_ID,"輸入完成")
