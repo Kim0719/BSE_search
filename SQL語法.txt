@@ -1,0 +1,5 @@
+CREATE TABLE BSE_search (
+  chID varchar(100) PRIMARY KEY,
+  chDate varchar(100),
+  chResult varchar(100)
+);
