@@ -73,7 +73,7 @@ print("此次抓取數量",len(IDs))
 # In[6]:
 
 
-url = 'https://10.241.219.45/CMSUserWeb'
+url = ''
 driver = webdriver.Chrome()
 driver.get(url)
 #driver.maximize_window()
