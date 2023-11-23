@@ -49,7 +49,7 @@ cursor_sp = conn_sp.cursor()
 # In[4]:
 
 
-cursor.execute("{CALL [dbo].[GetOpdList]}")
+cursor.execute("{}")
 
 #獲取結果
 rows = cursor.fetchall()
